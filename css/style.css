@@ -6,9 +6,6 @@
     --box3-bg: hsl(179, 100%, 13%);
     --para: hsla(0, 0%, 100%, 0.75);
     --mainbg-head-but: hsl(0, 0%, 95%);
-
-    --lexfont: lexend-decca-400;
-    --bigshofont: big-shoulder-700;
 }
 
 html {
@@ -28,8 +25,6 @@ body {
 }
 
 .main-container {
-    width: 35rem;
-    height: 150rem;
     background-color: blueviolet;
     border-radius: 1.5rem;
 
@@ -63,7 +58,7 @@ body {
 .car-type {
     margin: 0;
     text-transform: uppercase;
-    font-family: var(--bigshofont);
+    font-family: big-shoulder-700;
     font-size: 5rem;
     color: var(--mainbg-head-but);
 
@@ -71,7 +66,7 @@ body {
 }
 
 .car-detail {
-    font-family: var(--lexfont);
+    font-family: lexend-decca-400;
     font-size: 1.5rem;
     line-height: 2;
     color: var(--para);
@@ -85,7 +80,7 @@ body {
     height: 5rem;
     border-radius: 2.5rem;
     border-style: none;
-    font-family: var(--lexfont);
+    font-family: lexend-decca-400;
     background-color: var(--mainbg-head-but);
     margin-top: 0.5rem;
 
@@ -108,7 +103,7 @@ footer {
     bottom: 0;
 }
 .attribution {
-    font-family: var(--lexfont);
+    font-family: lexend-decca-400;
     font-size: 1.2rem;
     text-align: center; 
 }
@@ -125,8 +120,6 @@ footer {
 @media (min-width: 601px) {
 
     .main-container {
-        width: 90rem;
-        height: 50rem;
         flex-direction: row;
     }
     
