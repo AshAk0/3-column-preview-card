@@ -48,16 +48,12 @@ body {
 
 .box1 {
     background-color: var(--box1-bg);
-    border-top-left-radius: 1.5rem;
-    border-top-right-radius: 1.5rem;
 }
 .box2 {
     background-color: var(--box2-bg);
 }
 .box3 {
     background-color: var(--box3-bg);
-    border-bottom-left-radius: 1.5rem;
-    border-bottom-right-radius: 1.5rem;
 }
 
 .car-svg {
@@ -131,21 +127,12 @@ footer {
     .main-container {
         width: 90rem;
         height: 50rem;
-        display: flex;
         flex-direction: row;
     }
     
     .box {
         width: 30rem;
-    }
-
-    .box1 {
-        border-top-left-radius: 1.5rem;
-        border-bottom-left-radius: 1.5rem;
-    }
-    .box3 {
-        border-top-right-radius: 1.5rem;
-        border-bottom-right-radius: 1.5rem;
+        height: 50rem;
     }
 
     .car-detail {
