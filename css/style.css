@@ -32,6 +32,9 @@ body {
     height: 150rem;
     background-color: blueviolet;
     border-radius: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .box {
@@ -128,7 +131,7 @@ footer {
     .main-container {
         width: 90rem;
         height: 50rem;
-        display: flex;
+        flex-direction: row;
     }
     
     .box {
