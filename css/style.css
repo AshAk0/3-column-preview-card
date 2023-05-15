@@ -1,0 +1,156 @@
+@import url(../css/font.css);
+
+:root {
+    --box1-bg: hsl(31, 77%, 52%);
+    --box2-bg: hsl(184, 100%, 22%);
+    --box3-bg: hsl(179, 100%, 13%);
+    --para: hsla(0, 0%, 100%, 0.75);
+    --mainbg-head-but: hsl(0, 0%, 95%);
+
+    --lexfont: lexend-decca-400;
+    --bigshofont: big-shoulder-700;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--mainbg-head-but);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    width: 35rem;
+    height: 150rem;
+    background-color: blueviolet;
+    border-radius: 1.5rem;
+}
+
+.box {
+    width: 35rem;
+    height: 50rem;
+
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    grid-template-rows: 0.5fr 0.7fr 0.8fr 1fr auto 0.5fr;
+}
+
+.box1 {
+    background-color: var(--box1-bg);
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+.box2 {
+    background-color: var(--box2-bg);
+}
+.box3 {
+    background-color: var(--box3-bg);
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+
+.car-svg {
+    grid-area: 2/2;
+}
+
+.car-type {
+    margin: 0;
+    text-transform: uppercase;
+    font-family: var(--bigshofont);
+    font-size: 5rem;
+    color: var(--mainbg-head-but);
+
+    grid-area: 3/2;
+}
+
+.car-detail {
+    font-family: var(--lexfont);
+    font-size: 1.5rem;
+    line-height: 2;
+    color: var(--para);
+
+    grid-area: 4/2;
+
+}
+
+.more {
+    width: 15rem;
+    height: 5rem;
+    border-radius: 2.5rem;
+    border-style: none;
+    font-family: var(--lexfont);
+    background-color: var(--mainbg-head-but);
+    margin-top: 0.5rem;
+
+    grid-area: 5/2;
+
+    cursor: pointer;
+}
+.but1 {
+    color: var(--box1-bg);
+}
+.but2 {
+    color: var(--box2-bg);
+}
+.but3 {
+    color: var(--box3-bg);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+}
+.attribution {
+    font-family: var(--lexfont);
+    font-size: 1.2rem;
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.more:hover {
+    background-color: transparent;
+    color: var(--mainbg-head-but);
+    border: 0.2rem solid var(--mainbg-head-but);
+}
+
+@media (min-width: 601px) {
+
+    .main-container {
+        width: 90rem;
+        height: 50rem;
+        display: flex;
+    }
+    
+    .box {
+        width: 30rem;
+    }
+
+    .box1 {
+        border-top-left-radius: 1.5rem;
+        border-bottom-left-radius: 1.5rem;
+    }
+    .box3 {
+        border-top-right-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
+    }
+
+    .car-detail {
+        line-height: 1.5;
+        margin-top: 0;
+        margin-bottom: 6rem;
+    }
+
+    .more {
+        margin-top: 3rem;
+    }
+}

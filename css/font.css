@@ -1,0 +1,11 @@
+@font-face {
+    font-family: big-shoulder-700;
+    src: url(../fonts/Big_Shoulders_Display/BigShouldersDisplay-VariableFont_wght.ttf) format(truetype);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: lexend-decca-400;
+    src: url(../fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf) format(truetype);
+    font-weight: 400;
+}
