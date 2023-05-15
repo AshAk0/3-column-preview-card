@@ -16,8 +16,8 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100vh;
     background-color: var(--mainbg-head-but);
+    position: relative;
 
     display: flex;
     justify-content: center;
@@ -25,7 +25,6 @@ body {
 }
 
 .main-container {
-    background-color: blueviolet;
     border-radius: 1.5rem;
 
     display: flex;
@@ -118,8 +117,14 @@ footer {
 }
 
 @media (min-width: 601px) {
-
+    body {
+        width: 100%;
+        height: 100vh;
+    }
     .main-container {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
         flex-direction: row;
     }
     
